@@ -4,8 +4,8 @@ let cors = require('cors')
 let bodyParser = require('body-parser')
 require("dotenv").config()
 
-const orderRoute = require('../routes/order.route')
-const userRoute = require('../routes/user.route')
+const orderRoute = require('/routes/order.route')
+const userRoute = require('/routes/user.route')
 
 mongoose
     .connect(process.env.MONGO_DB_URI)
